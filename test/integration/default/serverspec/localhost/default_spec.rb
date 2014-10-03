@@ -21,6 +21,14 @@ describe file('/opt/rbenv') do
   it { should be_directory }
 end
 
+describe file('/opt/rbenv/plugins/ruby_build')
+  it { should be_directory }
+end
+
+describe file('/opt/rbenv/plugins/rbenv-gemset')
+  it { should be_directory }
+end
+
 describe file('/etc/yum.repos.d/epel.repo') do
   it { should be_file }
 end

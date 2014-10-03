@@ -15,6 +15,7 @@ suites:
       - recipe[golang]
       - recipe[rbenv]
       - recipe[rbenv::ruby_build]
+      - recipe[rbenv-gemset]
       - recipe[yum-epel]
     attributes:
       java:
